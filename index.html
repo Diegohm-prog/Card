@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/index.css" class="stylesheet`"/>
+    <title>Document</title>
+    <style>
+        *{
+          
+            box-sizing: border-box;
+        }
+        body{
+            background-color: gray;
+            display: block;
+            margin: 50px;
+            padding: 0px;
+        }
+        div.card.flex{
+            width: 459.375px;
+            height: 500;
+            box-shadow: 3px 3px 5px 3px rgb(63, 62, 62);
+        }
+        .flex{
+            display: flex;
+            flex-direction: column;
+            
+        }
+        #container{
+            
+            flex-direction: row;
+            gap: 50px;
+            justify-content: center; 
+            height: 500px;
+            width: 1000px;
+            
+        }
+        
+        .card {
+     
+            border: 0px solid white;
+            background-color: aliceblue;
+           
+        }
+         
+        .interactivity{
+            flex-direction: row;
+            justify-content: center;
+            gap: 200px;
+            align-items: flex-end; 
+            
+        }
+        
+        
+        .picture{
+            display: flex;
+            width: 100%;
+            height: 200px;
+            
+            
+           
+        }
+        .content{
+            display: flex;
+            flex-direction: column;
+            text-align : left;
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-bottom: 0px;
+            
+        }
+        
+        .interactivity {
+            flex-direction: row;
+            -ms-flex-align: center;
+            text-decoration: none;
+            gap: 230px;
+            font-size: 14px;
+            width: 95%;
+            height: 40px;
+            padding-top: 55px;
+            border-top: 3px solid rgba(22, 34, 3, .1);
+            margin-left: 10px;
+        }
+        
+        h1{
+          
+            color: black;
+        }
+        
+        h2 {
+           
+            padding-top: 0px;
+          
+            color: #d15656;
+            font-size: 16px;
+        }
+        .likes {
+            flex-direction:column;
+            align-content: center;
+            margin: 0;
+            padding: 0px;
+            position: relative;
+          
+        }
+        p.like {
+            margin: 0;
+            
+        }
+        a{
+            background-color: #d15656;
+            text-decoration: none;
+            color: aliceblue;
+            padding: 15px;
+        }
+       
+
+    </style>
+</head>
+<body>
+    <div id="container" class="flex">
+        <div class="card flex">
+            <img class="picture" src="chicago.jfif" alt="error" />
+            <div class="content">
+                <h1>The Second City</h1>
+                <h2>City of a Big Shoulders</h2>
+                <p class="text">Chicago is the home of the blues and the truth of jazz, the heart of comedy and the idea of the skyscraper. It's a city with a swagger, but without the surliness or even the fake smiles found in other cities of its size.</p>
+                
+            </div>
+            <div class="interactivity flex">
+                <a href="https://en.wikipedia.org/wiki/Chicago" target="blank">Read Article</a>
+                <div class="interactivity--stats flex">
+                    <div class="likes flex">
+                        
+                        <p class="like"><img src="comments.svg" />16 comments</p>
+                       
+                        <p class="like"><img src="heart.svg" />322 likes</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card flex">
+            <img class="picture" src="prague.jpg" alt="" />
+            <div class="content">
+                <h1>The Mother City</h1>
+                <h2>City of a Hundred Spires</h2>
+                <p class="text">Prague is the capital and largest city of the Czech Republic. The city's historic buildings and narrow, winding streets are testament to its centuries-old role as capital of the historic region of Bohemia.
+                </p><br>
+            </div>
+            <div class="interactivity flex">
+                <a href="https://en.wikipedia.org/wiki/Prague" target="blank">Read Article</a>
+                <div class="interactivity--stats flex">
+                    <div class="likes flex">
+                        <p class="like"><img src="comments.svg" />24 comments</p>
+                        <p class="like"><img src="heart.svg" />417 likes</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
